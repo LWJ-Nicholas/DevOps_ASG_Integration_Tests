@@ -15,7 +15,7 @@ ${error_msg}    css=.alert.alert-danger
 *** Keywords ***
 Launch Website
     Open Browser    ${website_url}    headlesschrome
-    Title Should Be    Login    
+    Title Should Be    Home    
     Sleep    2s   
 
 Close Website
