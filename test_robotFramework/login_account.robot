@@ -3,7 +3,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${website_url}    http://127.0.0.1:5000
+${website_url}    https://devops-asg-85a28bd72c4d.herokuapp.com/
 ${login_admin_username}    Admin      
 ${login_admin_password}    password
 ${login_user_username}    Testing3

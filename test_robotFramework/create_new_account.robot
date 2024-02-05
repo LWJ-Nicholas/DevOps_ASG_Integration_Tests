@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${website_url}    http://127.0.0.1:5000
+${website_url}    https://devops-asg-85a28bd72c4d.herokuapp.com/
 ${new_user_username}      Testing3
 ${new_user_password}      testing3
 ${login_btn}    xpath=//button[contains(text(),'Login')]
