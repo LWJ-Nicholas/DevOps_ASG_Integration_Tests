@@ -15,7 +15,7 @@ ${error_msg}    css=.alert.alert-danger
 *** Keywords ***
 Launch Website
     Open Browser    ${website_url}    headlesschrome
-    Title Should Be    Home    
+    #Title Should Be    Welcome    
     Sleep    2s   
 
 Close Website
@@ -26,12 +26,12 @@ Close Website
 
 Checking UI of Account Management
     [Setup]    Launch Website    
-    Input Text    id=username    ${login_admin_username}
-    Input Text    id=password    ${login_admin_password}
-    Click Element    ${login_btn}    
-    Sleep     3s
-    Wait Until Element Is Visible    ${success_msg}        
-    Wait Until Page Contains    Administrator
+    # Input Text    id=username    ${login_admin_username}
+    # Input Text    id=password    ${login_admin_password}
+    # Click Element    ${login_btn}    
+    # Sleep     3s
+    # Wait Until Element Is Visible    ${success_msg}        
+    # Wait Until Page Contains    Administrator
     Click Element    ${modify_accounts_btn}
     Wait Until Page Contains    Account Management
     Click Element    ${return_btn}

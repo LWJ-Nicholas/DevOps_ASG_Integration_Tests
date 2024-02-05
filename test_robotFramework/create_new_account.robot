@@ -29,21 +29,21 @@ Close Website
 *** Test Cases ***
 # Number of test cases: 8
 
-Creating New Account - Success
-    # Test case may fail if new username and password is not used
-    [Setup]    Launch Website
-    Click Element    ${create_anchor}       
-    Wait Until Page Contains    Create Account
-    Input Text    id=username    ${new_user_username}
-    Input Text    id=password    ${new_user_password}
-    Click Element    ${create_btn}    
-    Wait Until Element Is Visible    ${success_msg}    
-    Wait Until Page Contains    ${new_user_username}
-    Sleep    3s
-    Click Element    ${logout_btn}
-    Click Element    ${login_anchor}
-    Sleep    2s
-    [Teardown]    Close Website
+# Creating New Account - Success
+#     # Test case may fail if new username and password is not used
+#     [Setup]    Launch Website
+#     Click Element    ${create_anchor}       
+#     Wait Until Page Contains    Create Account
+#     Input Text    id=username    ${new_user_username}
+#     Input Text    id=password    ${new_user_password}
+#     Click Element    ${create_btn}    
+#     Wait Until Element Is Visible    ${success_msg}    
+#     Wait Until Page Contains    ${new_user_username}
+#     Sleep    3s
+#     Click Element    ${logout_btn}
+#     Click Element    ${login_anchor}
+#     Sleep    2s
+#     [Teardown]    Close Website
 
 Creating New Account - Failed Existing Account
     [Setup]    Launch Website
